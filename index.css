@@ -1,0 +1,18 @@
+.restaurants {
+  display: grid;
+}
+
+/* 16px (root font size) * 35 = 560px */
+@media (min-width: 35rem) {
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* 16px (root font size) * 60 = 960px */
+@media (min-width: 60rem) {
+  .restaurants {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
