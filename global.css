@@ -27,3 +27,22 @@ a:hover {
   padding: 1rem;
   margin: 0 auto;
 }
+
+.grid {
+  display: grid;
+}
+
+/* 16px (root font size) * 35 = 560px */
+@media (min-width: 35rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
+/* 16px (root font size) * 60 = 960px */
+@media (min-width: 60rem) {
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
