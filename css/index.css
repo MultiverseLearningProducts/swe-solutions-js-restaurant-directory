@@ -1,0 +1,22 @@
+/*
+ * I've cropped all my images to the same size, so I don't need this anymore.
+ * I'm leaving it here for learning purposes.
+ */
+
+/* .restaurant > img {
+  width: 100%;
+  height: 277px;
+  object-fit: cover;
+}
+
+@media (min-width: 35rem) {
+  .restaurant > img {
+    height: 134px;
+  }
+}
+
+@media (min-width: 60rem) {
+  .restaurant > img {
+    height: 157px;
+  }
+} */
