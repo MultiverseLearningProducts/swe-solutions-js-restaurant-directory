@@ -1,3 +1,4 @@
+import DOMPurify from "https://cdn.jsdelivr.net/npm/dompurify@2/dist/purify.es.min.js";
 import restaurants from "./data.js";
 
 function main() {
@@ -6,7 +7,7 @@ function main() {
   } else {
     const id = getRestaurantId();
     const restaurant = restaurants.find((restaurant) => restaurant.id === id);
-    app.innerHTML = getRestaurantHTML(restaurant);
+    app.innerHTML = DOMPurify.sanitize(getRestaurantHTML(restaurant));
   }
 }
 

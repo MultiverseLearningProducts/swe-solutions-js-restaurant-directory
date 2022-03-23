@@ -1,3 +1,4 @@
+import DOMPurify from "https://cdn.jsdelivr.net/npm/dompurify@2/dist/purify.es.min.js";
 import restaurants from "./data.js";
 
 const app = document.querySelector("#app");
@@ -9,7 +10,7 @@ function main() {
   } else {
     app.innerHTML = `
       <div class="grid">
-        ${restaurants.map(getRestaurantHTML).join("")}
+        ${DOMPurify.sanitize(restaurants.map(getRestaurantHTML).join(""))}
       </div>
     `;
   }
