@@ -8,3 +8,4 @@ Let's use our restaurant API to create a front end!
 4. Now that you have your API data available to your `index.js` file, can you use it to populate the HTML for the index page?
 5. Using the API data you exported from your `data.js` file, can you populate your `restaurant.html` page with the data for a particular restaurant? You'll need to get the restaurant ID from the query string in the URL.
 6. Can you use [DOMPurify](https://github.com/cure53/DOMPurify) to sanitize your API data and protect your users from [XSS attacks](https://developer.mozilla.org/en-US/docs/Glossary/Cross-site_scripting)? Since we're using ES modules, you'll need the `purify.es.js` version. You can either download it or serve it from a CDN like [jsDelivr](https://www.jsdelivr.com/package/npm/dompurify?path=dist&tab=collection).
+7. Can you create a fake "admin" area where you can create new restaurants by sending POST requests to your server?
