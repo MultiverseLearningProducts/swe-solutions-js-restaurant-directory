@@ -1,3 +1,12 @@
+label {
+  display: block;
+}
+
+input,
+button {
+  font: inherit;
+}
+
 /*
  * I've cropped all my images to the same size, so I don't need this anymore.
  * I'm leaving it here for learning purposes.

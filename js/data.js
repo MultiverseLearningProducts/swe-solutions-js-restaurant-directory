@@ -1,18 +1,8 @@
-const API = "https://restaurants.barker.workers.dev/";
+import { getJSON } from "./utils.js";
+
+const API = "http://localhost:3000/restaurants/";
 
 let restaurants;
-
-async function getJSON(response) {
-  if (response.ok) {
-    const data = await response.json();
-    return Promise.resolve(data);
-  }
-
-  const { status, statusText } = response;
-  const error = new Error(`${status} ${statusText}`);
-
-  return Promise.reject(error);
-}
 
 try {
   const response = await fetch(API);
@@ -21,4 +11,4 @@ try {
   restaurants = error;
 }
 
-export default restaurants;
+export { restaurants as default, API };
